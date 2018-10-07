@@ -1,0 +1,10 @@
+
+# start service mongodb
+sudo service mongod start
+
+
+
+# lib mongodb
+pip3 install pymongo
+
+# 
