@@ -11,11 +11,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_menu_window(object):
     def setupUi(self, menu_window):
         menu_window.setObjectName("menu_window")
-        menu_window.resize(289, 322)
+        menu_window.resize(549, 308)
         self.centralWidget = QtWidgets.QWidget(menu_window)
         self.centralWidget.setObjectName("centralWidget")
         self.label_lab = QtWidgets.QLabel(self.centralWidget)
-        self.label_lab.setGeometry(QtCore.QRect(20, 30, 151, 17))
+        self.label_lab.setGeometry(QtCore.QRect(10, 20, 151, 17))
         self.label_lab.setObjectName("label_lab")
         self.button_movie_create = QtWidgets.QPushButton(self.centralWidget)
         self.button_movie_create.setGeometry(QtCore.QRect(30, 120, 89, 25))
@@ -48,12 +48,20 @@ class Ui_menu_window(object):
         self.button_company_delete.setGeometry(QtCore.QRect(150, 210, 89, 25))
         self.button_company_delete.setObjectName("button_company_delete")
         self.button_exit = QtWidgets.QPushButton(self.centralWidget)
-        self.button_exit.setGeometry(QtCore.QRect(80, 260, 89, 25))
+        self.button_exit.setGeometry(QtCore.QRect(230, 270, 89, 25))
         self.button_exit.setObjectName("button_exit")
+        self.line = QtWidgets.QFrame(self.centralWidget)
+        self.line.setGeometry(QtCore.QRect(263, 20, 20, 231))
+        self.line.setFrameShape(QtWidgets.QFrame.VLine)
+        self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.button_search_movies = QtWidgets.QPushButton(self.centralWidget)
+        self.button_search_movies.setGeometry(QtCore.QRect(320, 110, 171, 25))
+        self.button_search_movies.setObjectName("button_search_movies")
+        self.button_statistics = QtWidgets.QPushButton(self.centralWidget)
+        self.button_statistics.setGeometry(QtCore.QRect(320, 190, 171, 25))
+        self.button_statistics.setObjectName("button_statistics")
         menu_window.setCentralWidget(self.centralWidget)
-        self.statusBar = QtWidgets.QStatusBar(menu_window)
-        self.statusBar.setObjectName("statusBar")
-        menu_window.setStatusBar(self.statusBar)
 
         self.retranslateUi(menu_window)
         QtCore.QMetaObject.connectSlotsByName(menu_window)
@@ -73,6 +81,8 @@ class Ui_menu_window(object):
         self.button_company_edit.setText(_translate("menu_window", "edit"))
         self.button_company_delete.setText(_translate("menu_window", "delete"))
         self.button_exit.setText(_translate("menu_window", "exit"))
+        self.button_search_movies.setText(_translate("menu_window", "search about movies"))
+        self.button_statistics.setText(_translate("menu_window", "companies statistics"))
 
 
 if __name__ == "__main__":

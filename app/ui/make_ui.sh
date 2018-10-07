@@ -13,4 +13,6 @@ pyuic5 -x delete_movie_window.ui -o delete_movie_window.py
 
 pyuic5 -x create_company_window.ui -o create_company_window.py
 
+pyuic5 -x consult_movies.ui -o consult_movies_window.py
 
+pyuic5 -x statistics_window.ui -o statistics_window.py
